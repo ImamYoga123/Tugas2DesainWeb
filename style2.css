@@ -1,0 +1,95 @@
+body{
+	color: black;
+	background-color: #ba8c46;
+	background-size: cover;
+	background-position: center;
+	font-family: 'georgia', times, san-serif;
+	line-height: normal;
+	margin: auto;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	background-color: white;
+}
+
+.header {
+	padding: 20px;
+}
+
+.banner {
+	height: 250px;
+	background-image: url(poto/kutai.jpg);
+	background-position: 0px -520px;
+	border-top: 5px solid #927e1b;
+	border-bottom: 5px solid #927e1b;
+	width: 100%;
+}
+
+.bawah {
+    text-align: center;
+    padding: 4px;
+    background-color: rgb(110, 82, 20);
+    color: white;
+}
+
+h2 {
+	padding: 20px;
+	padding-bottom: 0px;
+}
+
+h3 {
+	padding: 20px;
+	padding-bottom: 0px;
+	padding-top: 10px;
+}
+
+h4 {
+	padding: 20px;
+	padding-bottom: 0px;
+	padding-top: 10px;
+}
+
+b {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+p {
+	padding: 20px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	text-align: justify;
+}
+
+a {
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.satu {
+	text-align: center;
+	color: #bd8048;
+}
+
+@media(max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:900px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:800px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:700px){
+    .grid{
+        grid-template-columns: repeat(1fr);
+    }
+}

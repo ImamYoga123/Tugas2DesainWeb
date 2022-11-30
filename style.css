@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(85, 199, 180);
+}
+h1{
+    color: #bd8048;
+}
+h3{
+    color: #eee;
+}
+p{
+    color: #bd8048;
+}
+.p1{
+    color: #eee;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px;
+    align-items: center;
+    grid-gap: 35px;
+}
+img{
+    object-fit: cover;
+}
+.grid > article{
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 15px;
+    text-align: center;
+    background: rgb(226, 216, 216);
+    width: 180px;
+    transition: transform;
+}
+.grid > article img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%
+}
+.conten{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.grid > article:hover{
+    transform: scale(1.1);
+}
+@media(max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:900px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:800px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:700px){
+    .grid{
+        grid-template-columns: repeat(1fr);
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 4px;
+    background-color: rgb(110, 82, 20);
+    color: white;
+  }
+
+    <!--Elemen Banner-->
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    padding: 40px;
+    background: white;
+}
+.text h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-container .banner{
+    background: linear-gradient(-55deg, #d48944 28%, #bd8048 30.1%, #c49466 67%, #e8984d 67.1%);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+.banner-container .banner .batik{
+    flex: 1 1 250px;
+    padding: 0;
+    text-align: center;
+}
+.banner-container .banner .batik img{
+    width: 100%;
+}
+.banner-container .banner .content{
+    flex: 1 1 550px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.banner-container .banner .content span{
+    color: #eee;
+    font-size: 25px;
+}
+.banner-container .banner .content h3{
+    color: #eee;
+    font-size: 40px;
+}
+.banner-container .banner .content p{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.banner-container .banner .content .btn{
+    display: block;
+    height: 50px;
+    width: 150px;
+    line-height: 40px;
+    background-color: rgb(192, 103, 62);
+    color: azure;
+    margin: 5px auto;
+    text-decoration: none;
+}
+.banner-container .banner .orang{
+    position: relative;
+    bottom: -33px;
+    padding: 10px;
+    flex: 1 1 250px;
+}
+.banner-container .banner .orang img{
+    width: 100%;
+}
+@media (max-width:768px){
+    .banner-container .banner .orang{
+        display: none;
+    }
+}
+
+.font{
+    text-align: center;
+    font-style: italic, bold;
+    color:rgb(192, 103, 62);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(168, 116, 19);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
